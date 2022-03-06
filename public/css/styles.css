@@ -1,0 +1,79 @@
+:root{
+    --darkTeal:#2B7697;
+    --teal:#0CACC1;
+    --lightGreen:#C4F1A0;
+    --blue:#6B83FF;
+    --red:#FF6B7D;
+    --yellow:#F3FF6B;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    margin:0;
+}
+h1{
+    font-size: 3rem;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    right: 0;
+    top: 0;
+    background-color: var(--teal);
+    border-radius: 0rem 0rem 0rem 3rem;
+}
+nav .logo{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav ul li{
+    margin: 1rem;
+}
+
+.navButton{
+    position:fixed;
+    display: none;
+}
+
+/* index */
+.banner {
+    width: 100%;
+    background-color:var(--lightGreen);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img{
+    height: 80vh;
+}
+
+
+/* canvas */
+.easel{
+    background-color: var(--darkTeal);
+    align-items: flex-start;
+    height: 100vh;
+}
+canvas{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}

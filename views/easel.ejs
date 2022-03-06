@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<body>
+
+<div class="row easel">
+    <div class="row side-menu">
+        <div class="col">
+            <div class="row return">
+                <button
+                onclick="window.location.href='/user-page'">
+                    return
+                </button>
+            </div>
+            <div class="tool-box">
+
+            </div>
+            <div class="col utilities">
+                <button>Save</button>
+                <button>Download</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="work-area">
+        <canvas id="canvas" width="500" height="500" style="border:2px solid black" >
+        <script type="module" src="/public/js/canvas.js"></script>
+    </div>
+
+
+    </canvas>
+</div>
+</body>
