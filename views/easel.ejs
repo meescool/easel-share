@@ -11,24 +11,25 @@
                 </button>
             </div>
             <div class="tool-box">
+                <p>Colors</p>
                 <div class="colors">
-                    <button class="red" onclick="changeColor('#FF6B7D')"></button>
-                    <button class="yellow" onclick="changeColor('#F3FF6B')"></button>
-                    <button class="blue" onclick="changeColor('#6B83FF')"></button>
-                    <button class="black" onclick="changeColor('#000000')"></button>
+                    <button class="red" onclick="changeColor('#FF6B7D')" aria-label="Red color"></button>
+                    <button class="yellow" onclick="changeColor('#F3FF6B')" aria-label="Yellow color"></button>
+                    <button class="blue" onclick="changeColor('#6B83FF')" aria-label="Blue color"></button>
+                    <button class="black" onclick="changeColor('#000000')" aria-label="Black color"></button>
                 </div>
-
+                <p>Brush sizes</p>
                 <div class="sizes">
-                    <button class="small" onclick="changeSize(1)"></button>
-                    <button class="medium" onclick="changeSize(3)"></button>
-                    <button class="big" onclick="changeSize(5)"></button>
-                    <button class="huge" onclick="changeSize(8)"></button>
+                    <button class="small" onclick="changeSize(1)" arial-label="Small brush"></button>
+                    <button class="medium" onclick="changeSize(3)" aria-label="Medium brush"></button>
+                    <button class="big" onclick="changeSize(5)" arial-label="Big brush"></button>
+                    <button class="huge" onclick="changeSize(8)" aria-label="Huge brush"></button>
 
                 </div>
-
+                <p>Erase</p>
                 <div class="eraser">
-                    <button class="erase" onclick="changeColor('#ffffff')"></button>
-                    <button class="erase-all" id="eraseAll" onclick=""></button>
+                    <button class="erase" onclick="changeColor('#ffffff')" aria-label="eraser"></button>
+                    <button class="erase-all" id="eraseAll" aria-label="new easel" ></button>
                 </div>
 
             </div>
@@ -40,7 +41,7 @@
         
     </div>
     <div class="work-area">
-        <canvas id="canvas" width="500" height="500" >
+        <canvas id="canvas" width="500" height="500" aria-label="This is your drawing space">
         <script type="module" src="/js/canvas.js"></script>
         </canvas>
     </div>
