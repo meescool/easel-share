@@ -46,7 +46,7 @@ eraseBtn.addEventListener('click', function(e){
 canvas.addEventListener('mousedown', function(e){
 
     x = e.clientX - (bounds.left *1.5 );
-    y = e.clientY - bounds.top ;
+    y = e.clientY -  (bounds.top *1.5 )
     drawing = true;
     // render();
 
