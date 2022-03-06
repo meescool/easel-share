@@ -1,0 +1,25 @@
+{
+  "name": "easel-share",
+  "version": "1.0.0",
+  "description": "server for easel-share site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meescool/easel-share.git"
+  },
+  "author": "Marcela Estrada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meescool/easel-share/issues"
+  },
+  "homepage": "https://github.com/meescool/easel-share#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21"
+  }
+}
