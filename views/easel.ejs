@@ -7,22 +7,41 @@
             <div class="row return">
                 <button
                 onclick="window.location.href='/user-page'">
-                    return
+                return    
                 </button>
             </div>
             <div class="tool-box">
+                <div class="colors">
+                    <button class="red" onclick="changeColor('#FF6B7D')"></button>
+                    <button class="yellow" onclick="changeColor('#F3FF6B')"></button>
+                    <button class="blue" onclick="changeColor('#6B83FF')"></button>
+                    <button class="black" onclick="changeColor('#000000')"></button>
+                </div>
+
+                <div class="sizes">
+                    <button class="small" onclick="changeSize(1)"></button>
+                    <button class="medium" onclick="changeSize(3)"></button>
+                    <button class="big" onclick="changeSize(5)"></button>
+                    <button class="huge" onclick="changeSize(8)"></button>
+
+                </div>
+
+                <div class="eraser">
+                    <button class="erase" onclick="changeColor('#ffffff')"></button>
+                    <button class="erase-all" id="eraseAll" onclick=""></button>
+                </div>
 
             </div>
-            <div class="col utilities">
+            <!-- <div class="col utilities">
                 <button>Save</button>
                 <button>Download</button>
-            </div>
+            </div> -->
         </div>
         
     </div>
     <div class="work-area">
-        <canvas id="canvas" width="500" height="500" style="border:2px solid black" >
-        <script type="module" src="/public/js/canvas.js"></script>
+        <canvas id="canvas" width="500" height="500" >
+        <script type="module" src="/js/canvas.js"></script>
         </canvas>
     </div>
 
@@ -30,3 +49,8 @@
    
 </div>
 </body>
+
+<script  src="/js/canvas.js">
+    
+</script>
+
