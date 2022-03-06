@@ -1,18 +1,23 @@
-<button class="navButton">menu</button>
-<nav>
-    <div class="logo">
-        <a href="/">        
-            <img src="" alt="Logo">
-        </a>
+<button id="navbutton"class="navButton" onclick="openMenu()">menu</button>
+<div class="logo">
+    <a href="/">   
+        Easel Share     
+    </a>
+</div>
+<nav id="nav"> 
+
+    <div class="close">
+        <button onclick="closeMenu()">X</button>
     </div>
     <ul>
         <li><a href="/learning">Learn</a></li>
         <li><a href="/art-shows">Art Shows</a></li>
         <li><a href="/easel">My Easel</a></li>
     </ul>
-    <div>
+    <div class="profileIcon">
         <a href="/user-page">
-            <img src="" alt="profile icon">
+            <img src="../img/profilePic.svg" alt="profile icon">
         </a>
     </div>
+
 </nav>
