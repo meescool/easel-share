@@ -44,25 +44,31 @@ eraseBtn.addEventListener('click', function(e){
 });
 
 canvas.addEventListener('mousedown', function(e){
-     x2 = e.clientX - bounds.left;
-     y2 = e.clientY - bounds.top;
-     drawing = true;
-     render();
+
+    x = e.clientX - (bounds.left *1.5 );
+    y = e.clientY - bounds.top ;
+    drawing = true;
+    // render();
 
 });
 
 canvas.addEventListener(('mousemove'), function(e){
     
     if(drawing == true){
-    x = e.clientX - bounds.left;
-    y = e.clientY - bounds.top;
+
+
+    x2 = e.clientX -  (bounds.left *1.5 );
+    y2 = e.clientY -  (bounds.top *1.5 ) ;
     render();
+
+    x = e.clientX - (bounds.left *1.5 ) ;
+    y = e.clientY - (bounds.top *1.5 );
     }
 });
 
 canvas.addEventListener(('mouseup'), function(e){
-    x2 = e.clientX - bounds.left;
-    y2 = e.clientY - bounds.top;
+    // x2 = e.clientX - bounds.left;
+    // y2 = e.clientY - bounds.top;
     drawing = false;
     
 });
