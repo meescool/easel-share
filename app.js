@@ -49,6 +49,6 @@ app.get('/:pagename', function(req, res){
     res.render(data.url,data);
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log('the server is up!');
 })
