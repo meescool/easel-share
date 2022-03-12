@@ -1,5 +1,9 @@
 /**
  * Script for allowing the user to paint on their canvas
+ * 
+ * sources:
+ *  - This helped me get the right position for the cursor!
+ *      https://stackoverflow.com/questions/17130395/real-mouse-position-in-canvas
  */
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -22,6 +26,8 @@ let size = 1;
 erase = false;
 // helpful for calculating coordinates
 bounds = canvas.getBoundingClientRect();
+scaledX = canvas.width / bounds.width;
+scaledY = canvas.height / bounds.height;
 /**
  * This function gets the color depending on the button being pressed and
  * sets the brush to the new color.
@@ -66,8 +72,8 @@ eraseBtn.addEventListener('click', function(e){
  */
 canvas.addEventListener('mousedown', function(e){
 
-    x = e.clientX - (bounds.left *1.5 );
-    y = e.clientY -  (bounds.top *1.5 )
+    x = (e.clientX - bounds.left ) * scaledX;
+    y = (e.clientY -  bounds.top) * scaledY;
     drawing = true;
 
 });
@@ -81,12 +87,12 @@ canvas.addEventListener(('mousemove'), function(e){
     if(drawing == true){
 
 
-    x2 = e.clientX -  (bounds.left *1.5 );
-    y2 = e.clientY -  (bounds.top *1.5 ) ;
+    x2 = (e.clientX - bounds.left) * scaledX;
+    y2 = (e.clientY - bounds.top) * scaledY;
     render();
 
-    x = e.clientX - (bounds.left *1.5 ) ;
-    y = e.clientY - (bounds.top *1.5 );
+    x = (e.clientX - bounds.left) * scaledX;
+    y = (e.clientY - bounds.top) * scaledY;
     }
 });
 
